@@ -38,29 +38,29 @@ let nivelIngles = 8; //1,2,3,4,5
 //     console.log("Conseguiu fazer a compra!");
 // }
 
-// let num1 = 3; num2 = 0; num3 = 3;
+let num1 = 3; num2 = 0; num3 = 3;
 
-// if(num1 > num2 && num1 > num3){
-//     if(num2 > num3){
-//         console.log(num1 + " > " + num2 + " > " + num3);
-//     } else {
-//         console.log(num1 + " > " + num3 + " > " + num2)
-//     }
-// } else if(num2 > num1 && num2 > num3){
-//     if(num1 > num3){
-//         console.log(num2 + " > " + num1 + " > " + num3);
-//     } else {
-//         console.log(num2+ " > " + num3 + " > " + num1)
-//     }
-// } else if (num3 > num2 && num3 > num1){
-//     if(num1 > num2){
-//         console.log(num3 + " > " + num1 + " > " + num2);
-//     } else {
-//         console.log(num3 + " > " + num2 + " > " + num1)
-//     }
-// } else{
-//     console.log("Há numeros iguais!");
-// }
+if(num1 > num2 && num1 > num3){
+    if(num2 > num3){
+        console.log(num1 + " > " + num2 + " > " + num3);
+    } else {
+        console.log(num1 + " > " + num3 + " > " + num2)
+    }
+} else if(num2 > num1 && num2 > num3){
+    if(num1 > num3){
+        console.log(num2 + " > " + num1 + " > " + num3);
+    } else {
+        console.log(num2+ " > " + num3 + " > " + num1)
+    }
+} else if (num3 > num2 && num3 > num1){
+    if(num1 > num2){
+        console.log(num3 + " > " + num1 + " > " + num2);
+    } else {
+        console.log(num3 + " > " + num2 + " > " + num1)
+    }
+} else{
+    console.log("Há numeros iguais!");
+}
 
 // let idade = 18; //1 variavel
 // let habilitado = true;  // 2 variavel

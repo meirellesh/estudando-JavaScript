@@ -1,18 +1,18 @@
-// Escreva um programa que verifique se um número é positivo, negativo ou zero e exiba uma mensagem correspondente.
+// // Escreva um programa que verifique se um número é positivo, negativo ou zero e exiba uma mensagem correspondente.
 
 let num1 = 16;
 let num2 = -14;
 let num3 = 0;
 
 if (num3 > 0) {
-    console.log("O número " + num3 + " é maior que zero");
+    console.log("O número " + num3 + " é positivo");
 } else if (num3 < 0) {
-    console.log("O número " + num3 + " é menor que zero");
+    console.log("O número " + num3 + " é negativo");
 } else {
     console.log("O número é " + num3);
 }
 
-// Crie um programa que solicite a idade de uma pessoa e verifique se ela é maior de idade (18 anos ou mais) ou menor de idade.
+// // Crie um programa que solicite a idade de uma pessoa e verifique se ela é maior de idade (18 anos ou mais) ou menor de idade.
 
 var idade1 = 18;
 let idade2 = 12;
@@ -25,25 +25,34 @@ if (idade1 >= 18) {
 
 // Escreva um programa que receba dois números e determine qual deles é o maior.
 
-let numero1 = 2;
-let numero2 = 5;
+let numero1 = 20;
+let numero2 = 55;
+let numero3 = 10;
 
-if (numero1 > numero2) {
+if (numero1 > numero2 && numero1 > numero3) {
     console.log("O maior número é o primeiro. Seu valor é: " + numero1);
-} else {
+} else if (numero2 > numero1 && numero2 > numero3) {
     console.log("O maior número é o segundo. Seu valor é: " + numero2);
+} else  if(numero3 > numero1 && numero3 > numero2){
+    console.log("O maior número é o terceiro. Seu valor é: " + numero3);
+} else{
+    console.log("O maior numero n pode ser duplicado")
 }
 
 // Crie um programa que receba dois números e verifique se ele é par ou ímpar.
 
-let n1 = 6;
+let n1 = 3;
 let n2 = 13;
+let produto = n1 * n2;
 
-if (n1 % 2 == 0) {
-    console.log("O numero " + n1 + " é par!");
-} else {
-    console.log("O número " + n1 + " é impar!");
+
+if (produto % 2 == 0) {
+    console.log("O produto de " + n1 + " e " + n2 + " é " + produto +  ", esse numero é par!");
+} else{
+    console.log("O produto de " + n1 + " e " + n2 + " é " + produto +  ", esse numero é impar!")
 }
+
+
 
 // Escreva um programa que solicite o nome de um dia da semana e exiba se é um dia útil ou um fim de semana.
 
@@ -64,10 +73,10 @@ if (diaNome == "Segunda") {
 } else if (diaNome == "Domingo") {
     console.log(diaNome + " é um dia de fim de semana");
 } else {
-    console.log(diaNome + "isso não é um dia da semana!");
+    console.log(diaNome + "Digite novamente o dia da semana, não utilize acentos e comece com letra maiuscula");
 }
 
-// Faça um programa que solicite um número de 1 a 7 e exiba o dia da semana correspondente (1 - domingo, 2 - segunda-feira, etc.).
+// // Faça um programa que solicite um número de 1 a 7 e exiba o dia da semana correspondente (1 - domingo, 2 - segunda-feira, etc.).
 
 let dia2 = 5;
 
@@ -101,7 +110,7 @@ switch (dia2) {
         break;
 }
 
-// Crie um programa que solicite uma temperatura em Celsius e a converta para Fahrenheit, exibindo o resultado com duas casas decimais
+// // Crie um programa que solicite uma temperatura em Celsius e a converta para Fahrenheit, exibindo o resultado com duas casas decimais
 
 let tempC = 35;
 let tempF;
