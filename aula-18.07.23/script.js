@@ -19,3 +19,21 @@ let campoEmail = document.querySelector("input[type=email]")
 
 let negritoParagrafo = document.querySelector("p b");
 //console.log(negritoParagrafo);
+
+let negritosParagrafo = document.querySelectorAll("p b"); // é muito aplicado hoje
+
+// titulo.align = "right";
+// titulo.title = "Titulo Principal";
+// titulo.style.color = "cyan";
+// titulo.style.fontSize = "100px";
+// let paragrafos = document.querySelector("p");
+// paragrafo.innerHTML = "Hoje na aula de <b>JavaScript</b> conversamos sobre DOM. Entendi muita coisa. Da para criar muitas ideias."
+// console.log(paragrafo.innerText); // conteudo textual do elemento
+// console.log(paragrafo.innerHTML); // conteudo textual + html do elemento
+
+
+// uso de classe com JavaScript
+let caixa = document.querySelector('#informe')
+caixa.classList.add("erro"); //adiciona uma nova classe
+caixa.classList.remove("mensagem"); //remove uma classe
+caixa.classList.toggle("atencao"); //adiciona se nao existe ou remove se existir

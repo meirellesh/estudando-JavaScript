@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML</title>    
+</head>
+<body onload="addText();">
+    <!-- Crie uma função em JavaScript que recebe um vetor de objetos representando alunos e monta uma tabela HTML dinamicamente com base nesses dados. Cada objeto no vetor representa um aluno e possui as propriedades "nome", "idade" e "nota". Sua tarefa é percorrer o vetor de objetos e gerar uma tabela no formato HTML, exibindo os dados de cada aluno em linhas separadas. Cada linha da tabela deve conter três colunas: uma para o nome, outra para a idade e a última para a nota do aluno. Certifique-se de que a tabela gerada seja exibida corretamente no documento HTML. -->
+    <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>nota</th>                       
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nome1"></td>
+                <td id="idade1"></td>
+                <td id="nota1"></td>
+            </tr>
+            <tr>
+                <td id="nome2"></td>
+                <td id="idade2"></td>
+                <td id="nota2"></td>
+            </tr>
+            <tr>
+                <td id="nome3"></td>
+                <td id="idade3"></td>
+                <td id="nota3"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
