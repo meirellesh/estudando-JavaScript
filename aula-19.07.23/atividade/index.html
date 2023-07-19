@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Semaforo</title>
+        <style>
+            #vermelho {
+                background-image: url(./imagens/vermelho.png);
+                background-repeat: no-repeat;
+            }
+            #amarelo {
+                background-image: url(./imagens/vermelho.png);
+                background-repeat: no-repeat;
+            }
+            #verde {
+                background-image: url(./imagens/vermelho.png);
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="imagens/vermelho.png" id="semaforo" />
+        <br><br>
+        <button type="button"  onclick="vermelho()" >Vermelho</button>
+        <button type="button" onclick="amarelo()" >Amarelo</button>
+        <button type="button" onclick="verde()" >Verde</button>
+        <button type="button" onclick="automatico()">
+            Automatico
+        </button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
