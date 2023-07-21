@@ -1,4 +1,4 @@
-export const melhoresFilmes = [
+export const melhoreFilmes = [
     {
         titulo: "O Poderoso Chefão",
         ano: 1972,
@@ -60,3 +60,7 @@ export const melhoresFilmes = [
         diretor: "Christopher Nolan",
     }
 ];
+
+export function buscarFilme(id) {
+    console.log("Buscando filme com id", id);
+}
