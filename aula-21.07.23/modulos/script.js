@@ -5,7 +5,7 @@ function preecherLista(filmes) {
     const lista = document.querySelector("#lista-filmes");
     lista.innerHTML = "";
     filmes.forEach(filme => {
-        lista.innerHTML += `<li>${filme.titulo}</li>`;
+        lista.innerHTML += `<tr><td>${livros.titulo}</tr></td>`;
     });
 }
 buscarFilme(10);
