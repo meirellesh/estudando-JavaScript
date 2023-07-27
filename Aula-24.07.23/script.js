@@ -28,24 +28,24 @@ btnEscolha.onclick = () => {
     start();
 };
 
-// Dessa maneira o site é reiniciado, perdemos as respostas colocadas mas volta ao inicio.
-// btnRestart.onclick = () => {
-//     window.location.assign("./index.html");
-//     currentIndex = 0;
-//     questionsCorrect = 0;
-//     loadQuestion();
-//     stop();
-//     start();
-// };
+// Dessa maneira o site é reiniciado e perdemos as respostas colocadas, volta ao inicio e permite o reinicio do teste.
+btnRestart.onclick = () => {
+    window.location.assign("./index.html");
+    currentIndex = 0;
+    questionsCorrect = 0;
+    loadQuestion();
+    stop();
+    start();
+};
 
 // Dessa maneira reinicia as respostas, nao é recarregado o site. Mas não volta a página inicial de escolha do quiz
-// btnRestart.onclick = () => {
-//     content.style.display = "flex";
-//     contentFinish.style.display = "none";
-//     currentIndex = 0;
-//     questionsCorrect = 0;
-//     loadQuestion();
-//   };
+btnRestart.onclick = () => {
+    content.style.display = "flex";
+    contentFinish.style.display = "none";
+    currentIndex = 0;
+    questionsCorrect = 0;
+    loadQuestion();
+  };
 
 // Dessa maneira volta a página inicial, as respostas não sao limpas. Ao iniciar ja mostra o resultado anterior
 btnRestart.onclick = () => {
