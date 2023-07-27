@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(
+        90deg,
+        rgba(91, 30, 159, 1) 0%,
+        rgba(77, 39, 182, 1) 100%
+    );
+}
+
+body h2 {
+    color: white;
+    text-align: center;
+}
+
+
+.main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.spnQtd {
+    text-align: end;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008ccc;
+    color: white;
+}
+
+#btnEscolha{
+    background-color: #008ccc;
+    text-align: center;
+    padding: 2px;
+
+}
+
+
+.finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.finish button {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 36px;
+}
+
+.container,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela {
+    padding: 24px;
+}
+
+.campo {
+    background-color: #e4e4e4;
+    width: 200px;
+    height: 24px;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: black;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.cronometro{
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    font-size: 16px;
+}

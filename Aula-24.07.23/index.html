@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <section id="home" class="home" hidden>
+                <div class="container">
+                    <p>Coloque seu nome, escolha um tema e clique em iniciar</p>
+                    <form>
+                        <table class="tabela">
+                            <tr>
+                                <td><label for="nome">Nome:</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input
+                                        class="campo"
+                                        type="nome"
+                                        name="nome"
+                                        id="nome"
+                                        maxlength="50"
+                                        required
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tema:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="campo" name="tema" id="tema">
+                                        <option disabled selected></option>
+                                        <option value="HTML">HTML</option>
+                                        <option value="CSS">CSS</option>
+                                        <option value="JS">JavaScript</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="button" class="campo" id="btnEscolha">
+                            Iniciar Quiz
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="quiz" class="quiz" hidden>
+                <h2>QUIZ APP</h2>
+                <div class="main">
+                    <div class="content">
+                        <span class="spnQtd"></span>
+                        <span class="question"></span>
+                        <div class="answers"></div>
+                    </div>
+                    <div class="finish">
+                        <span></span>
+                        <button>Reiniciar</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cronometro">                             
+                <p id="counter">Timer: 00:00:00</p>
+            </div>
+        </main>
+        <script src="script.js" type="module"></script>
+        <script src="cron.js"></script>
+    </body>
+</html>
