@@ -4,7 +4,7 @@ const spnQtd = document.querySelector(".spnQtd");
 const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
-const btnRestart = document.querySelector(".finish button");
+const btnRestart = document.querySelector("#btnReiniciar");
 const btnEscolha = document.querySelector("#btnEscolha");
 const home = document.getElementById("home");
 const quiz = document.getElementById("quiz");
@@ -14,24 +14,40 @@ import { start } from "./cron.js";
 import { stop } from "./cron.js";
 import { timer } from "./cron.js";
 
-
 let currentIndex = 0;
 let questionsCorrect = 0;
 
 home.hidden = false;
 
-btnEscolha.onclick = () =>{
+btnEscolha.onclick = () => {
     home.hidden = true;
     quiz.hidden = false;
     currentIndex = 0;
-    questionsCorrect = 0;    
+    questionsCorrect = 0;
     loadQuestion();
     start();
-}
+};
 
+// Dessa maneira o site é reiniciado, perdemos as respostas colocadas mas volta ao inicio.
+// btnRestart.onclick = () => {
+//     window.location.assign("./index.html");
+//     currentIndex = 0;
+//     questionsCorrect = 0;
+//     loadQuestion();
+//     stop();
+//     start();
+// };
 
+// Dessa maneira reinicia as respostas, nao é recarregado o site. Mas não volta a página inicial de escolha do quiz
+// btnRestart.onclick = () => {
+//     content.style.display = "flex";
+//     contentFinish.style.display = "none";
+//     currentIndex = 0;
+//     questionsCorrect = 0;
+//     loadQuestion();
+//   };
 
-
+// Dessa maneira volta a página inicial, as respostas não sao limpas. Ao iniciar ja mostra o resultado anterior
 btnRestart.onclick = () => {
     // Exibir a seção home e ocultar a seção quiz
     home.hidden = false;
@@ -51,7 +67,6 @@ btnRestart.onclick = () => {
     stop();
     start();
 };
-
 
 function nextQuestion(e) {
     if (e.target.getAttribute("data-correct") === "true") {
@@ -96,6 +111,3 @@ function loadQuestion() {
 }
 
 loadQuestion();
-
-
-
